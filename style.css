@@ -1,18 +1,23 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 /*global styling*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+li{
+    list-style: none;
+}
 /*body styling*/
-body{
+
+body {
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
 
-body::before{
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -20,34 +25,37 @@ body::before{
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image:
-    url(https://c.pxhere.com/photos/58/b9/curves_endless_road_tail-930678.jpg!d);
+    background-image: url(./assets/motorcycle_road_marking_132827_6570x4326.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 /*wrapper*/
-#page-wrapper{
+
+#page-wrapper {
     position: relative;
 }
 
 /*nav-link*/
-a{
-    color: #ffffff;
+
+a {
+    color: #ffd900;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 /*container*/
-.container{
+
+.container {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
 /*button*/
-.btn{
+
+.btn {
     padding: 0 20px;
     height: 50px;
     font-size: 1.5em;
@@ -60,12 +68,14 @@ a{
 }
 
 /*product grid*/
-.grid{
+
+.grid {
     display: flex;
 }
 
 /*header container*/
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,29 +84,30 @@ header{
     top: 0;
     min-height: 80px;
     padding: 0px 20px;
-    background-color: rgba(65,65,65,0.8);
+    background-color: rgba(65, 65, 65, 0.8);
 }
 
 @media (max-width: 600px) {
     header {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
-  }
+}
 
 /*logo branding*/
-.logo{
+
+.logo {
     width: 60vw;
 }
 
 @media (max-width: 650px) {
     .logo {
-      margin-top: 15px;
-      width: 100%;
-      position: relative;
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
     }
-  }
+}
 
-.logo > img{
+.logo>img {
     width: 100%;
     height: 100%;
     max-width: 200px;
@@ -108,33 +119,34 @@ header{
 }
 
 @media (max-width: 650px) {
-    .logo > img {
-      margin: 0 auto;
+    .logo>img {
+        margin: 0 auto;
     }
-  }
+}
 
 /*navigation button*/
-nav{
+
+nav {
     font-weight: 400;
     color: #ffd900;
 }
 
 @media (max-width: 650px) {
     nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
     }
     nav li {
-      padding-bottom: 5px;
+        padding-bottom: 5px;
     }
 }
 
-nav > ul {
+nav>ul {
     width: 35vw;
     display: flex;
     flex-direction: row;
@@ -142,13 +154,14 @@ nav > ul {
 }
 
 @media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
+    nav>ul {
+        flex-direction: column;
     }
 }
 
 /*about section*/
-#about{
+
+#about {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,37 +171,41 @@ nav > ul {
     padding-top: 200px;
     padding-bottom: 250px;
     margin-bottom: 10px;
-    margin-top: 100px;
-    background-color: rgba(176, 180, 180, 0.575);
-    border-top: 60px solid transparent;
+    margin-top: 150px;
+    background-color: rgba(86, 96, 97, 0.575);
+    border-top: 40px solid transparent;
 }
 
-#about > h2{
-    font-size: 2.0em;
+#about>p {
+    color: #eee;
+    font-size: 1.5em;
+}
+
+#about>h2 {
+    color: #ffd900;
+    font-size: 2.5em;
     margin-bottom: 25px;
     word-wrap: break-word;
 }
 
 @media (max-width: 650px) {
     #about {
-      margin-top: 0px;
-      border-top: hidden;
+        margin-top: 0px;
+        border-top: hidden;
     }
 }
+
+/*feature section*/
 
 #feature {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-top: 100px;
-    border-top: 90px solid transparent ;
     padding: 20px;
-    background-image: linear-gradient(
-        115deg,
-        rgba(131, 131, 131, 0.808),
-        rgba(164, 219, 226, 0.473)
-        );
+    margin-top: 100px;
+    border-top: 90px solid transparent;
+    background-color: rgba(86, 96, 97, 0.575);
 }
 
 #feature .icon {
@@ -202,7 +219,7 @@ nav > ul {
 
 @media (max-width: 550px) {
     #features .icon {
-      display: none;
+        display: none;
     }
 }
 
@@ -215,46 +232,72 @@ nav > ul {
     padding: 5px;
 }
 
+#feature .desc>h2 {
+    font-size: 1.5em;
+    color: #ffd900;
+}
+
+#feature .desc>p {
+    color: #eee;
+}
+
 @media (max-width: 550px) {
     #features .desc {
-      width: 100%;
-      text-align: center;
-      padding: 0;
-      height: 150px;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
     }
 }
 
 @media (max-width: 650px) {
     #features {
-      margin-top: 0;
+        margin-top: 0;
     }
 }
 
-#how-it-works{
-    margin-top: 50px;
+/*how it works section (temporarily is just a video)*/
+#how-it-works {
     display: flex;
     justify-content: center;
+    padding: 20px;
+    margin-top: 100px;
     border: 90px solid transparent;
-    
-    background-image: linear-gradient(
-        115deg,
-         rgba(131, 131, 131, 0.808),
-         rgba(164, 219, 226, 0.473)
-        );
-    padding: 15px;
+    background-color: rgba(86, 96, 97, 0.575);
 }
 
-#how-it-works > iframe {
+#how-it-works>iframe {
     max-width: 560px;
     width: 100%;
 }
 
-#pricing{
-    margin-top: 50px;
+/*product pricing section*/
+#pricing {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-top: 90px solid #eee;
-    border-bottom: 90px solid #eee ;
+    margin-top: 100px;
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
+    background-color: rgba(86, 96, 97, 0.575);
 }
 
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/4);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product>.level {
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    background-color: rgba(255, 217, 0,0.8);
+}
