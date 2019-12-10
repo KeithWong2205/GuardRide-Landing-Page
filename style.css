@@ -7,9 +7,10 @@
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style: none;
 }
+
 /*body styling*/
 
 body {
@@ -257,21 +258,23 @@ nav>ul {
 }
 
 /*how it works section (temporarily is just a video)*/
+
 #how-it-works {
     display: flex;
     justify-content: center;
     padding: 20px;
     margin-top: 100px;
-    border: 90px solid transparent;
+    border: 150px solid transparent;
     background-color: rgba(86, 96, 97, 0.575);
 }
 
 #how-it-works>iframe {
-    max-width: 560px;
+    max-width: 840px;
     width: 100%;
 }
 
 /*product pricing section*/
+
 #pricing {
     display: flex;
     flex-direction: row;
@@ -291,6 +294,7 @@ nav>ul {
     margin: 10px;
     border: 1px solid #000;
     border-radius: 3px;
+    color: #eee;
 }
 
 .product>.level {
@@ -299,5 +303,46 @@ nav>ul {
     text-transform: uppercase;
     font-weight: 700;
     border-bottom: 1px solid #000;
-    background-color: rgba(255, 217, 0,0.8);
+    background-color: rgba(255, 217, 0, 0.8);
+    color: #000;
 }
+
+.product>h2 {
+    margin-top: 15px;
+    color: #ffd900;
+}
+
+.product>ol {
+    margin: 15px 0 15px 0;
+}
+
+.product>ol>li {
+    padding: 5px 0;
+    color: #eee;
+}
+
+.product>button {
+    border: 1px solid #ffd900;
+    margin: 15px 0;
+    color: #ffd900;
+}
+
+.product>button:hover {
+    background-color: #ffd900;
+    color: #000;
+    border: 1px solid #000;
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
