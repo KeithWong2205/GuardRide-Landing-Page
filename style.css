@@ -1,32 +1,52 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
-
+/*global styling*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*body styling*/
 body{
     background-color: #eee;
     font-family: 'Lato', sans-serif;
 }
 
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image:
+    url(https://c.pxhere.com/photos/58/b9/curves_endless_road_tail-930678.jpg!d);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*wrapper*/
 #page-wrapper{
     position: relative;
 }
 
+/*nav-link*/
 a{
     color: #ffffff;
     text-decoration: none;
     font-size: 1.2em;
 }
 
+/*container*/
 .container{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
+/*button*/
 .btn{
     padding: 0 20px;
     height: 50px;
@@ -39,20 +59,22 @@ a{
     cursor: pointer;
 }
 
+/*product grid*/
 .grid{
     display: flex;
 }
 
+/*header container*/
 header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    min-height: 80px;
-    padding: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5c5c5c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 80px;
+    padding: 0px 20px;
+    background-color: rgba(65,65,65,0.8);
 }
 
 @media (max-width: 600px) {
@@ -61,6 +83,7 @@ header{
     }
   }
 
+/*logo branding*/
 .logo{
     width: 60vw;
 }
@@ -90,6 +113,7 @@ header{
     }
   }
 
+/*navigation button*/
 nav{
     font-weight: 400;
     color: #ffd900;
@@ -123,6 +147,7 @@ nav > ul {
     }
 }
 
+/*about section*/
 #about{
     display: flex;
     flex-direction: column;
@@ -130,22 +155,24 @@ nav > ul {
     justify-content: center;
     text-align: center;
     height: 200px;
-    padding-top: 250px;
+    padding-top: 200px;
     padding-bottom: 250px;
     margin-bottom: 10px;
-    margin-top: 50px;
-    background-color: #5c5c5c;
-    border-top: 60px solid #eee;
+    margin-top: 100px;
+    background-color: rgba(176, 180, 180, 0.575);
+    border-top: 60px solid transparent;
 }
 
 #about > h2{
+    font-size: 2.0em;
     margin-bottom: 25px;
     word-wrap: break-word;
 }
 
 @media (max-width: 650px) {
-    #hero {
-      margin-top: 120px;
+    #about {
+      margin-top: 0px;
+      border-top: hidden;
     }
 }
 
@@ -154,10 +181,14 @@ nav > ul {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-top: 50px;
-    border-top: 90px solid #eee;
+    margin-top: 100px;
+    border-top: 90px solid transparent ;
     padding: 20px;
-    background: #5c5c5c;
+    background-image: linear-gradient(
+        115deg,
+        rgba(131, 131, 131, 0.808),
+        rgba(164, 219, 226, 0.473)
+        );
 }
 
 #feature .icon {
@@ -203,8 +234,13 @@ nav > ul {
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    border-top: 90px solid #eee;
-    background-color: #5c5c5c;
+    border: 90px solid transparent;
+    
+    background-image: linear-gradient(
+        115deg,
+         rgba(131, 131, 131, 0.808),
+         rgba(164, 219, 226, 0.473)
+        );
     padding: 15px;
 }
 
