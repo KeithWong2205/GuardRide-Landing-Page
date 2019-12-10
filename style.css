@@ -345,4 +345,69 @@ nav>ul {
       margin-bottom: 10px;
     }
   }
-  
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgba(65, 65, 65, 0.8);
+}
+
+#subcribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#subcribe>h4{
+    word-wrap: break-word;
+    color: #ffd900;
+}
+
+#subcribe input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+#subcribe input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 1px solid #ffd900;
+    font-size: 1em;
+    color: #ffd900;
+  }
+
+  #subcribe input[type="submit"]:hover {
+    background-color: #ffd900;
+    color: #000;
+    transition: backgroud-color 1s;
+  }
+
+footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer > ul > li {
+      font-size: 1em;
+    padding: 0 10px;
+  }
+
+  footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #000;
+  }
