@@ -16,8 +16,9 @@ body{
 }
 
 a{
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 .container{
@@ -43,14 +44,15 @@ a{
 }
 
 header{
+    width: 100%;
     position: fixed;
     top: 0;
     min-height: 80px;
     padding: 0px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #5c5c5c;
 }
 
 @media (max-width: 600px) {
@@ -90,6 +92,7 @@ header{
 
 nav{
     font-weight: 400;
+    color: #ffd900;
 }
 
 @media (max-width: 650px) {
@@ -127,5 +130,95 @@ nav > ul {
     justify-content: center;
     text-align: center;
     height: 200px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    margin-bottom: 10px;
     margin-top: 50px;
+    background-color: #5c5c5c;
+    border-top: 60px solid #eee;
 }
+
+#about > h2{
+    margin-bottom: 25px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 650px) {
+    #hero {
+      margin-top: 120px;
+    }
+}
+
+#feature {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 90px solid #eee;
+    padding: 20px;
+    background: #5c5c5c;
+}
+
+#feature .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #ffd900;
+}
+
+@media (max-width: 550px) {
+    #features .icon {
+      display: none;
+    }
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+@media (max-width: 550px) {
+    #features .desc {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    #features {
+      margin-top: 0;
+    }
+}
+
+#how-it-works{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 90px solid #eee;
+    background-color: #5c5c5c;
+    padding: 15px;
+}
+
+#how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+#pricing{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 90px solid #eee;
+    border-bottom: 90px solid #eee ;
+}
+
